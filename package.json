@@ -1,16 +1,20 @@
 {
   "name": "cora-ui-vue3",
-  "version": "1.0.0",
-  "description": "A Vue 3 UI component library",
-  "main": "dist/lib/index.js",
-  "files": [
-    "dist/lib/*"
-  ],
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:lib": "vite build --config vite.lib.config.js"
+  "version": "1.0.1",
+  "type": "module",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    },
+    "./style.css": "./dist/cora-ui-vue3.css"
   },
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
   "peerDependencies": {
     "vue": "^3.0.0"
   },
