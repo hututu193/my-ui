@@ -162,18 +162,22 @@ button:active {
   margin-bottom: 12px;
 }
 
-/* 添加这个强制左对齐的样式 */
+/* 强力修复样式 */
 :deep(.demo-result) {
-  min-width: 300px;
-  word-break: break-all;
-  text-align: left !important; /* 强制左对齐 */
-  display: block !important;   /* 确保是块级元素 */
-  margin: 12px 0 !important;   /* 强制外边距 */
+  min-width: 300px !important;
+  word-break: break-all !important;
+  text-align: left !important;
+  display: block !important;
+  margin: 12px 0 !important;
+  padding: 12px !important;
+  background: #f8f9fa !important;
+  border-radius: 6px !important;
+  border: 1px solid #e9ecef !important;
+  font-family: monospace !important;
 }
 
-/* 同时修复所有可能居中的元素 */
-:deep(p),
-:deep(div) {
+/* 强制所有文本左对齐 */
+:deep(*) {
   text-align: left !important;
 }
 </style>
