@@ -17,6 +17,8 @@ export default defineConfig({
                     vue: 'Vue'
                 }
             }
-        }
+        },
+        cssCodeSplit: true, // ✅ 新增：样式单独打包
+        outDir: 'dist/lib'  // ✅ 新增：明确输出目录
     }
 })

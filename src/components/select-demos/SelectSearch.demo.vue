@@ -1,7 +1,7 @@
 <template>
   <div class="demo-block">
     <h2 class="demo-title">搜索功能</h2>
-    <Select v-model="value" :options="options" />
+    <Select v-model="value" :options="options"/>
     <div class="demo-result">选中值: {{ value }}</div>
   </div>
 </template>
@@ -10,6 +10,7 @@
 import { ref } from 'vue'
 import { Select } from '../../lib'
 const value = ref('')
+
 const options = [
   { label: '苹果', value: 'apple' },
   { label: '香蕉', value: 'banana' },

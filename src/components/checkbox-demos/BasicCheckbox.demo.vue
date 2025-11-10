@@ -6,7 +6,7 @@
       v-model="selectedValues"
       :options="checkboxOptions"
     />
-    <p>选中值：{{ selectedValues }}</p>
+    <p class="demo-result">选中值：{{ selectedValues }}</p>
   </div>
 </template>
 

@@ -49,7 +49,7 @@
         :label="opt.label"
         :selectedValue="selected"
         :disabled="opt.disabled"
-        @select="handleSelect"
+        @select="handleSelect" 
       />
     </ul>
   </div>
@@ -69,12 +69,14 @@ interface OptionType {
   label: string
   value: string
   disabled?: boolean
+  
 }
 
 const props = defineProps<{
   options: OptionType[]
   modelValue?: string | string[]
   multiple?: boolean
+  
 }>()
 
 const emit = defineEmits<{ (e: 'update:modelValue', value: string | string[]): void }>()

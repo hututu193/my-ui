@@ -161,6 +161,21 @@ button:active {
 .demo-component {
   margin-bottom: 12px;
 }
+
+/* 添加这个强制左对齐的样式 */
+:deep(.demo-result) {
+  min-width: 300px;
+  word-break: break-all;
+  text-align: left !important; /* 强制左对齐 */
+  display: block !important;   /* 确保是块级元素 */
+  margin: 12px 0 !important;   /* 强制外边距 */
+}
+
+/* 同时修复所有可能居中的元素 */
+:deep(p),
+:deep(div) {
+  text-align: left !important;
+}
 </style>
 
 <style lang="scss">

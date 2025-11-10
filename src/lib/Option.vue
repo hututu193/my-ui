@@ -3,6 +3,7 @@
     @click="handleClick"
     :style="{
       padding: '8px',
+      textAlign: 'left',
       background: isSelected ? '#eee' : '#fff',
       color: disabled ? '#aaa' : '#000',
       cursor: disabled ? 'not-allowed' : 'pointer'
@@ -14,7 +15,6 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-
 const props = defineProps<{
   value: string
   label: string

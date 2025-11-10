@@ -1,16 +1,17 @@
 {
   "name": "cora-ui-vue3",
-  "version": "1.0.9",
-  "main": "dist/index.umd.js",
-  "module": "dist/index.es.js",
+  "version": "1.1.0",
+  "type": "module",
+  "main": "dist/lib/index.umd.js",
+  "module": "dist/lib/index.es.js",
   "files": [
-    "dist"
+    "dist/lib"
   ],
+  "style": "dist/lib/style.css",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:lib": "vite build --config vite.lib.config.js",
-    "preview": "vite preview"
+    "build:lib": "vite build --config vite.lib.config.js"
   },
   "peerDependencies": {
     "vue": "^3.0.0"
