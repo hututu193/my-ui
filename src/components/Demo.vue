@@ -162,24 +162,7 @@ button:active {
   margin-bottom: 12px;
 }
 
-/* 强力修复样式 */
-:deep(.demo-result) {
-  min-width: 300px !important;
-  word-break: break-all !important;
-  text-align: left !important;
-  display: block !important;
-  margin: 12px 0 !important;
-  padding: 12px !important;
-  background: #f8f9fa !important;
-  border-radius: 6px !important;
-  border: 1px solid #e9ecef !important;
-  font-family: monospace !important;
-}
 
-/* 强制所有文本左对齐 */
-:deep(*) {
-  text-align: left !important;
-}
 </style>
 
 <style lang="scss">

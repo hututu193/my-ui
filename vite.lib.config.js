@@ -18,7 +18,7 @@ export default defineConfig({
                 }
             }
         },
-        cssCodeSplit: true, // ✅ 新增：样式单独打包
-        outDir: 'dist/lib'  // ✅ 新增：明确输出目录
+        cssCodeSplit: true,
+        outDir: 'dist'  // 直接输出到 dist 根目录
     }
 })
